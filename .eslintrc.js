@@ -24,6 +24,13 @@ module.exports = {
       rules: { "no-process-exit": "off" },
     },
     {
+      files: ["test/**"],
+      rules: {
+        camelcase: "off",
+        "node/no-missing-import": "off",
+      },
+    },
+    {
       files: ["hardhat.config.ts", "scripts/**", "test/**"],
       rules: {
         "node/no-unpublished-import": "off",
